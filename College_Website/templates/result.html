@@ -1,0 +1,127 @@
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block title %}
+Student Result
+{% endblock title %}
+
+{% block content %}
+<style>
+    table,th,td{
+        border: 2px solid black;    
+        font-weight: bold;
+    }
+    .one{
+        color:white;
+        background-color: rgb(179, 41, 167);
+    }
+    body{
+     margin-top: 20px;
+    }
+    .box1{
+        height:500px;
+        width: 500px;
+        border-radius: 20px;
+        color: red;
+        background-color: blueviolet;
+        border:2px solid black;
+    }
+    .two{
+        color:blue;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+<center>
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class="row">
+        <div class="col-12"><span class="logo"><img src="{%static '/images/logo.jpg' %}" height="100px" width="100px">RK College of Engineering, Chennai
+           <center><h6> (A constituent College of Anna University,Chennai)</h6></center></span><hr>
+        <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+    </div>
+</div>
+
+    <h2 class="one"> I<sup>st</sup> Semester Examination Results May-2024</h2>
+    <h3>Welcome {{ student.Name }}!!</h3>
+    {% if student.Tamil >= 35 and student.English >= 35 and student.Maths >= 35 and student.Physics >= 35 and student.Chemistry >= 35 and student.Fundamentals_of_engg >= 35 %}
+    <h3>Congratulations</h3>
+    {% else %}
+    <h2>Sorry!! Better luck next time</h2>
+    {% endif %}
+<div class="container">
+    <div class="box">
+        <table border="1">
+            <thead>
+            <tr>
+                <th colspan="4" style="text-align:center">{{student.Name}}|{{ student.Reg_number }}</th>
+            </tr>
+       
+            <tr>
+                <th style="background-color:rgb(39, 233, 39);">Subject code</th>
+                <th style="background-color:rgb(39, 233, 39);">Subject </th>
+                <th style="background-color:rgb(39, 233, 39);">Marks</th>
+                <th style="background-color:rgb(39, 233, 39);">Result</th>
+            </tr>
+    
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Tamil</td>
+                <td>{{ student.Tamil }}</td>
+                <td>{% if student.Tamil >= 35 %} Pass {% else %} Fail {% endif %}</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>English</td>
+                <td>{{ student.English }}</td>
+                <td>{% if student.English >= 35 %} Pass {% else %} Fail {% endif %}</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Maths</td>
+                <td>{{ student.Maths }}</td>
+                <td>{% if student.Maths >= 35 %} Pass {% else %} Fail {% endif %}</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Physics</td>
+                <td>{{ student.Physics }}</td>
+                <td>{% if student.Physics >= 35 %} Pass {% else %} Fail {% endif %}</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Chemistry</td>
+                <td>{{ student.Chemistry }}</td>
+                <td>{% if student.Chemistry >= 35 %} Pass {% else %} Fail {% endif %}</td>
+            </tr>
+            <tr>
+                <td>006</td>
+                <td>FE</td>
+                <td>{{ student.Fundamentals_of_engg }}</td>
+                <td>{% if student.Fundamentals_of_engg >= 35 %} Pass {% else %} Fail {% endif %}</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center">Total</td>
+                <td colspan="1">{{ student.Tamil|add:student.English|add:student.Maths|add:student.Physics|add:student.Chemistry|add:student.Fundamentals_of_engg}}</td>
+            </tr>
+           {% for item in St_resultdetails %}
+            <tr>
+                <td>Images</td>
+                <img src="{{item.image.url}}" height="100px" width="100px" alt="student">
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>
+</div>
+</center>
+{% endblock content %}
+

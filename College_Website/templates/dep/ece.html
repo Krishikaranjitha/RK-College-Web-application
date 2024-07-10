@@ -1,0 +1,47 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+    }
+    .three{
+        margin:40px;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class"row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+            <center><h6> (A constituent College of Anna University,Chennai)</h6></center></span><hr>
+         <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+     </div>
+ </div>
+
+    {% include 'navbar.html'%}
+<center><h3 class="two"><u>Department of Electronics and Communication Engineering
+</u></h3>
+<hr>
+</center>
+<div class="three">
+<p>The Department of Electronics and Communication Engineering (ECE), RK University college of Engineering Chennai was established in the year 2008 with the vision of developing the department as a Centre of Excellence in R&D, in the field of Electronics and Communication Engineering and make the students blossom into meritorious and self-disciplined engineers by hard work. To achieve excellence not only in teaching-learning processes but also in adopting innovative techniques required to improve product quality in Electronics and Telecom Industries.</p>
+<p>The department has well-equipped & spacious laboratories with all state-of-the-art facilities for experimentation. The major laboratories are: Electronics Devices and Circuits Laboratory, Electronics Circuits and simulation Laboratory, Digital Electronics lab, Analog and Digital Communication Laboratory, Microprocessor and Microcontrollers Laboratory, DSP Lab. Ample number of systems with internet and WiFi facilities is available for perk up the knowledge of learner.</p>
+<p>The department has a team of committed faculty members who are not only well qualified but are also backed by rich industrial / research / teaching experience in the field of optical communication, computer and communication, Applied electronics, communication systems. Impart industry and research based quality education for developing innovative Electronics and Communication Engineers Enrich the academic activities by continual improvement in the teaching - learning process and Infuse confidence in the minds of students to develop as entrepreneurs.</p>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}

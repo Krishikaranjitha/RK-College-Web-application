@@ -1,0 +1,45 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+    }
+    .three{
+        margin:40px;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class"row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+            <center><h6> (A constituent College of Anna University,Chennai)</h6></center></span><hr>
+         <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+     </div>
+ </div>
+    {% include 'navbar.html'%}
+
+<center><h3 class="two"><u>Department of Electrical And Electronics Engineering</u></h3>
+    <hr>
+
+</center>
+<div class="three">
+    <p>RK University college of Engineering  has established at Chennai in 2009 to enrich and educate the students from Rural Background.It is currently the largest multidisciplinary Department at chennai Campus and covers practically all sub-disciplines under Electrical Power and Electronics. The department currently offers a UG program in Electrical and Electronics Engineering. The department also provides Research Guidance for MS and Ph.D. The purpose of the Department of Electrical and Electronic Engineering is to provide professional training, and at the same time to participate actively in applied and theoretical research. The Department strives to instill in students the attitudes, values, vision and training that will prepare them for lifetimes of continued learning and leadership, to develop the ability and passion to work wisely, creatively, and effectively for the benefit of society. The Department has a number of facilities with a substantial collection of instruments and equipments for instruction and research in different areas of Electrical and Electronics Engineering. The Department has been constantly modernizing the infrastructure and laboratory facilities. The Department is endowed with well equipped laboratories in several of the areas listed below. The available laboratories and facilities include: Basic Electrical Science, Basic Electronics, Electric Circuits, Control Systems Electrical Machines and Instrumentation.</p>
+</div>
+</div>
+</div>
+</div>
+{% endblock content %}

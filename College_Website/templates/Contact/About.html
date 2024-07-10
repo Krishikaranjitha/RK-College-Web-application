@@ -1,0 +1,66 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+        margin-left:40px;
+        margin-right:40px;
+
+    }
+    .three{
+        margin-top:40px;
+        margin-left:40px;
+        margin-right:40px;
+
+    }
+    .four{
+        margin-top:40px;
+        margin-left:40px;
+        margin-right:40px;
+ 
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+
+
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class="row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+           <center><h6> (A constituent College of Anna University,Chennai)</h></center></span><hr>
+        <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+    </div>
+</div>
+{% include 'navbar.html'%}
+<center><h3 class="two"><u>About College</u></h3>
+        <hr>
+    </center>
+
+    <div class="col-12">
+        <center><div class="four"><span><img src="static/images/3.png" alt="logo" width="1000px" height="300px"></center></span></div></div>
+<div class="three">
+    <p>RK College of Engineering Chennai has been established by the Government of Tamil nadu in the year 2008 with five departments namely Civil Engineering, Computer science and engineering, Electronics and Communication Engineering,Electrical Electronics Engineering, Mechanical Engineering with an intake of 300 students</p>
+
+    <p>This university campus, is a place for budding engineers to widen their technical knowledge through which they could enhance their innovative ideas by effectively accessing all available technical resources found inside the campus.</p>
+        
+    <p>This campus provides a great support to technical education by bringing in a number of well experienced experts from various disciplines as staff members. Most of the staff members here, being doctoral holders in their relative fields, are packed with information so that the students thirst for research is easily quenched.</p>
+</div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+

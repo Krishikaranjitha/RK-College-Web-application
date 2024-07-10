@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}" />
+        <script src="{% static '/Js/bootstrap.bundle.js' %}"></script>
+        <script src="{% static '/Js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static '/Js/bootstrap.min.js' %}"></script>
+
+        <style>
+            .logo
+            {
+            
+                font-size:40px;
+                color:#556FF5;
+                font-family: "Playfair Display", serif;
+            }
+        
+       </style>
+
+
+    </head>
+    <body>
+        <center>
+            <div class="col-12"><span><center><img src="static/images/logo.jpg" alt="logo" height="150px" width="150px"></span><span class="logo">RK College of Engineering, Chennai</span></center></div>
+        </div>
+
+            <h1>Student Database</h1>
+            <div class="container">
+                <div class="col-3">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form.as_table}}
+                    </form>
+                </div>
+            </div>
+        </center>
+
+     </body>
+</html>

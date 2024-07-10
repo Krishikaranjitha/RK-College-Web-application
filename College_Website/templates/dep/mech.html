@@ -1,0 +1,45 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+    }
+    .three{
+        margin:40px;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class"row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+            <center><h6> (A constituent College of Anna University,Chennai)</h6></center></span><hr>
+         <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+     </div>
+ </div>
+    {% include 'navbar.html'%}
+<center><h3 class="two"><u>Department of Mechanical Engineering</u></h3>
+    <hr>
+</center>
+<div class="three">
+<p>The Department of Mechanical Engineering,RK University college of Engineering is established as one the university with a view to impart high quality technical education. The Department offers B.E. programme in Mechanical Engineering M.E. programme in Thermal Engineering. The Department also offers B.E. programme in Mechanical Engineering under Part Time mode.</p>
+<p>The Department is equipped with full-fledged laboratory facilities like design, drawing and part modeling lab. The Department has recently established Dynamics lab, Manufacturing Technology lab, Metrology and Measurements lab and a Computerized IC engine Test rig.</p>
+<p>An interactive relationship is maintained between the students and staff which enable the students to develop a sound foundation in the stream of Mechanical Engineering in a conducive ambience. The department has an excellent industrial interaction and contributes to the industry by offering consultancy services.</p>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock content %}

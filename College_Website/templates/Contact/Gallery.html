@@ -1,0 +1,67 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+    }
+    .three{
+        margin-top:20px;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+    img{
+        display:inline;
+    }
+
+</style>
+
+
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class="row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+           <center><h6> (A constituent College of Anna University,Chennai)</h></center></span><hr>
+        <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+    </div>
+</div>
+
+            {% include 'navbar.html'%}
+    <center><h3 class="two"><u>Gallery</u></h3>
+        <hr>
+    
+    {% for i in data %}
+    <div class="col-5">
+        <div class="card my-2">
+           <img src="media/{{ i.image }}" class="card-image-top" alt="Photo"></div>
+        </div>
+        {% endfor %}
+    </div> 
+    {% endblock content %}
+
+    {% comment %} <span><img src="static/images/1.png" alt="logo"></span>   
+    <span><img src="static/images/2.png" height="300 px" width="500px" alt="logo"></span>
+    <span><img src="static/images/6.jpg" alt="logo"></span>
+    <span><img src="static/images/7.jpg" alt="logo"></span>
+    <span><img src="static/images/8.jpg" alt="logo"></span>
+    <span><img src="static/images/9.jpg" alt="logo"></span>
+    <span><img src="static/images/10.jpg" alt="logo"></span>
+    <span><img src="static/images/10.jpg" alt="logo"></span>
+    <span><img src="static/images/11.jpg" alt="logo"></span>
+    <span><img src="static/images/12.png" alt="logo"></span>
+    <span><img src="static/images/13.jpg" alt="logo"></span>
+    <span><img src="static/images/14.jpg" alt="logo"></span>
+    <span><img src="static/images/15.jpg" alt="logo"></span>
+    <span><img src="static/images/chem.jpg" alt="logo"></span> {% endcomment %}
+
+

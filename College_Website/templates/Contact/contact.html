@@ -1,0 +1,60 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+    }
+    .three{
+        margin-top:20px;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+
+
+<div class="container"  style="margin-top:20px; text-align:center;">
+    <div class"row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+            <center><h6> (A constituent College of Anna University,Chennai)</h></center></span><hr>
+         <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+     </div>
+ </div>
+    
+            {% include 'navbar.html'%}
+    <center><h3 class="two"><u>Contact Details</u></h3>
+        <hr>
+    </center>
+    <center>
+    <span><img src="static/images/post.jpg" alt="post" height="120px" width="120px"></span>
+   <p><b>The Dean<br>
+    RK College of Engineering, Chennai<br>
+    Chennai Trichy Highway<br>
+    Anna Nagar-606101.<br>
+    Tamil Nadu<center><p>
+    <br>
+    <span><img src="static/images/phone.jpg" alt="post" height="120px" width="120px"></span>
+   <p>Dean Office: 04142 - 241000<br>
+    Office: 04142 - 241001<p>
+    <span><img src="static/images/mail.jpg" alt="post" height="120px" width="120px"></span>
+   <p> dean@rkec.edu.in<br>
+    office@rkec.edu.in
+    </b>
+<center>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+

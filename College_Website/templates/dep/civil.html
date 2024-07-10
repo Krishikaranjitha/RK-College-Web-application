@@ -1,0 +1,48 @@
+{% extends 'Base.html '%}
+{% load static %}
+{% block title %}
+RK Engineering college
+
+{%endblock title %}
+{% block content %}
+<style>
+    .two{
+        color:blue;
+        margin-top:15px;
+    }
+    .three{
+        margin:40px;
+    }
+    .logo
+    {
+    
+        font-size:30px;
+        color:brown;
+        font-family: "Playfair Display", serif;
+    }
+
+</style>
+<div class="container" style="margin-top:20px; text-align:center;">
+    <div class"row">
+        <div class="col-12"><span class="logo"><img src="static/images/logo.jpg"/ height="100px" width="100px">RK College of Engineering, Chennai
+            <center><h6> (A constituent College of Anna University,Chennai)</h6></center></span><hr>
+         <h5 style="color:blue">An AICTE Approved Institution</h5></div></div>
+     </div>
+ </div>
+
+            {% include 'navbar.html'%}
+    <center><h3 class="two"><u>Department of Civil Engineering</u></h3>
+        <hr>
+    </center>
+    
+<div class="three">
+<p>The Department of Civil Engineering was started in the year 2008 and presently it offers under graduate program in Civil Engineering English and Tamil medium.</p>
+<p>The Department also offers programmes leading to doctoral degree in various emerging areas. The Department has qualified faculty members with excellent academic records. The Department is equipped with excellent laboratory and analytical facilities for catering to the needs of students and research scholars. The department faculties are also involved in research activities in various areas of civil engineering.</p>
+<p>In the year 2010, this department has published 2 papers in reputed international journals and 2 papers are under review for publication in international journals. In addition, the faculty of civil Engineering have contributed to one international conference paper. One international paper is accepted for presentation.</p>
+<p>Consultancy services available from the department includes advance construction materials, such as fibre reinforcement concrete, self compacting concrete, structural analysis, land surveying and mapping, solid waste management, environmental management, geothermal energy exploration, costal vulnerability assessment, artificial recharge, water resource assessment, waste water treatment, pipeline design and optimumal routing, rural and urban planning.</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content%}
